@@ -190,3 +190,41 @@ section#info-panel-office {
     width: 355px;
   }
 }
+
+section#list {
+  display: flex;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
+      p {
+        font-weight: bold;
+        max-width: 360px;
+      }
+    }
+  }
+  .guarantee {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 20px;
+    .seals {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    button {
+      width: 288px;
+    }
+  }
+}
