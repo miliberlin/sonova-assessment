@@ -4,6 +4,7 @@ import Benefits from "./components/Benefits";
 import Button from "./components/Button";
 import InfoPanel from "./components/InfoPanel";
 import ListItem from "./components/ListItem";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
           <Button btnTxt="massa enim nec dui" />
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

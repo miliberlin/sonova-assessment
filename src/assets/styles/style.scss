@@ -228,3 +228,49 @@ section#list {
     }
   }
 }
+
+footer {
+  margin-top: 40px;
+  #footer__img {
+    height: 400px;
+    width: 100%;
+    padding-top: 100px;
+    background-image: url("../images/footer-img-dk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    p {
+      color: #fff;
+      margin-left: 100px;
+      &.quote {
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        &::before {
+          content: "";
+          background-image: url("../images/quotation-marks.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 87px;
+          width: 83px;
+          position: absolute;
+          left: -95px;
+          top: -10px;
+        }
+      }
+    }
+  }
+  #footer__credits {
+    height: 100px;
+    background-color: $footer;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 5px;
+    }
+  }
+}

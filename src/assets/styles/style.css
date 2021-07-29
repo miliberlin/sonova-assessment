@@ -220,4 +220,50 @@ section#list .guarantee button {
   width: 288px;
 }
 
+footer {
+  margin-top: 40px;
+}
+footer #footer__img {
+  height: 400px;
+  width: 100%;
+  padding-top: 100px;
+  background-image: url("../images/footer-img-dk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer #footer__img p {
+  color: #fff;
+  margin-left: 100px;
+}
+footer #footer__img p.quote {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+footer #footer__img p.quote::before {
+  content: "";
+  background-image: url("../images/quotation-marks.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 87px;
+  width: 83px;
+  position: absolute;
+  left: -95px;
+  top: -10px;
+}
+footer #footer__credits {
+  height: 100px;
+  background-color: #414141;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #footer__credits p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
