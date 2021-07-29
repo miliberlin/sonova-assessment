@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-padding {
+  padding: 0 143px;
+}
+
+header nav {
+  height: 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav #nav-logo img {
+  width: 118px;
+  height: 30px;
+}
+header nav #nav-phone-number p {
+  color: #59b02f;
+  margin: 3px;
+  text-align: right;
+}
+header nav #nav-phone-number p:first-of-type {
+  font-size: 22px;
+}
+header nav #nav-phone-number p:nth-of-type(2) {
+  font-size: 14px;
+}
+header nav #nav-phone-number p span {
+  width: 13px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
