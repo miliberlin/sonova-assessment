@@ -149,3 +149,44 @@ section#benefits {
     }
   }
 }
+
+section.info-panel {
+  margin: 50px 0;
+  .info-panel__wrapper {
+    background-color: $light-grey;
+    display: flex;
+    min-height: 510px;
+    .info-panel__txt {
+      width: 50%;
+      padding: 41px 44px;
+      p {
+        line-height: 28px;
+        margin: 0;
+      }
+    }
+    .info-panel__image {
+      width: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+section#info-panel-scooter .info-panel__image {
+  background-image: url("../images/scooter-dk.png");
+}
+
+section#info-panel-office {
+  .info-panel__image {
+    background-image: url("../images/office-dk.png");
+    order: 2;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  button {
+    width: 355px;
+  }
+}
