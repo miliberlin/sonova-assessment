@@ -4,11 +4,13 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
 }
+
 button {
   background-color: $green;
   color: #fff;
@@ -26,6 +28,7 @@ button {
     transition: all 150ms ease;
   }
 }
+
 .side-padding {
   padding: 0 143px;
 }
@@ -271,6 +274,95 @@ footer {
       font-size: 16px;
       font-weight: bold;
       margin: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-bp) {
+  .side-padding {
+    padding: 20px;
+  }
+
+  button {
+    width: 100% !important;
+  }
+
+  header nav {
+    height: 50px;
+    #nav-phone-number p:nth-of-type(2) {
+      display: none;
+    }
+  }
+
+  section#hero {
+    margin-top: 50px;
+  }
+
+  section#benefits .flex {
+    flex-flow: column;
+    .benefits__item {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      p {
+        margin-left: 10px;
+        &.percentage {
+          font-size: 30px;
+          & + p {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  section.info-panel .info-panel__wrapper {
+    flex-direction: column;
+    .info-panel__image {
+      width: 100%;
+      height: 320px;
+      background-position: center;
+    }
+    .info-panel__txt {
+      width: 100%;
+    }
+  }
+
+  section#list {
+    flex-direction: column;
+    ul {
+      width: 100%;
+      li p {
+        max-width: 100%;
+        font-weight: normal;
+      }
+    }
+    .guarantee {
+      width: 100%;
+      margin-top: 40px;
+      padding: 0;
+      .seals img {
+        width: 30%;
+        max-width: 100px;
+      }
+    }
+  }
+
+  footer {
+    #footer__img {
+      height: 400px;
+      width: 100%;
+      padding-top: 100px;
+      background-image: url("../images/footer-img-mb.png");
+    }
+    #footer__credits {
+      height: 55px;
+      p {
+        font-weight: normal;
+        &:last-of-type {
+          display: none;
+        }
+      }
     }
   }
 }
