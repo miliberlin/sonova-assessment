@@ -41,4 +41,12 @@ header nav #nav-phone-number p span {
   display: inline-block;
 }
 
+section#hero {
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
+  background-image: url("../images/hero-dk.png");
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=style.css.map */
