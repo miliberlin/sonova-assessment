@@ -7,6 +7,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+  background-color: #59b02f;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 17px;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(0.95);
+  opacity: 0.9;
+  transition: all 150ms ease;
+}
+
 .side-padding {
   padding: 0 143px;
 }
@@ -42,11 +60,52 @@ header nav #nav-phone-number p span {
 }
 
 section#hero {
-  margin-top: 100px;
   height: 500px;
   width: 100%;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-image: url("../images/hero-dk.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section#hero #hero__info-box {
+  height: 100%;
+  width: 500px;
+  background-color: #f9f9f9;
+  border: 1px solid #dededd;
+  padding: 43px 50px;
+}
+section#hero #hero__info-box h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
+}
+section#hero #hero__info-box button {
+  margin: 26px 0;
+  width: 100%;
+}
+section#hero #hero__info-box #awards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+section#hero #hero__info-box #awards #stars {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+section#hero #hero__info-box #awards #stars p {
+  font-weight: bold;
+  margin: 7px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
